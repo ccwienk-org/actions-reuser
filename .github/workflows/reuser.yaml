@@ -1,0 +1,13 @@
+name: reuser
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  run-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: reuse
+        uses: ccwienk-org/reuse-actions/.github/actions/useme@master
